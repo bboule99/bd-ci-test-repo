@@ -1,12 +1,11 @@
 language: java
 
 jdk:
-  - oraclejdk8
+- oraclejdk8
   
-  script:
-  - ./gradlew check
-  - ./gradlew createHubOutput
+script:
+- ./gradlew check
+- ./gradlew createHubOutput
     
-  after_success:
-  - ./hub_curl.sh
-
+after_success:
+- ./hub_curl.sh
